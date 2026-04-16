@@ -51,8 +51,8 @@ module.exports = {
           forwardingScore: 999,
           isForwarded: true,
           forwardedNewsletterMessageInfo: {
-            newsletterJid: '120363319098372999@newsletter',
-            newsletterName: 'REDXBOT302 PERFORMANCE',
+            newsletterJid: '120363421104812135@newsletter',
+            newsletterName: 'TEDDY-XMD PERFORMANCE',
             serverMessageId: -1
           }
         }

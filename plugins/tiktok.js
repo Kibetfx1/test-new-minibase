@@ -18,7 +18,7 @@ module.exports = {
             if (!data.status) throw new Error('Download failed');
             const videoUrl = data.result;
             const meta = data.metadata;
-            const caption = `🎵 *TikTok Video* 🎵\n\n👤 *User:* ${meta.author?.nickname} (@${meta.author?.username})\n📖 *Title:* ${meta.title}\n👍 *Likes:* ${meta.stats?.likes}\n💬 *Comments:* ${meta.stats?.comments}\n🔁 *Shares:* ${meta.stats?.shares}\n\n> ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀᴇᴅxʙᴏᴛ302`;
+            const caption = `🎵 *TikTok Video* 🎵\n\n👤 *User:* ${meta.author?.nickname} (@${meta.author?.username})\n📖 *Title:* ${meta.title}\n👍 *Likes:* ${meta.stats?.likes}\n💬 *Comments:* ${meta.stats?.comments}\n🔁 *Shares:* ${meta.stats?.shares}\n\n> ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝚃𝙴𝙳𝙳𝚈-𝚇𝙼𝙳`;
             await sock.sendMessage(chatId, { video: { url: videoUrl }, caption, ...channelInfo }, { quoted: message });
             await sock.sendMessage(chatId, { react: { text: '✅', key: message.key } });
         } catch (err) {

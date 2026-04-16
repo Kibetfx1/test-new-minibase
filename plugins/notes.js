@@ -10,8 +10,8 @@ const fs        = require('fs');
 const path      = require('path');
 const fakevCard = require('../lib/fakevcard');
 
-const BOT_NAME = process.env.BOT_NAME || '🔥 REDXBOT302 🔥';
-const NL_JID   = process.env.NEWSLETTER_JID || '120363405513439052@newsletter';
+const BOT_NAME = process.env.BOT_NAME || '🔥 TEDDY-XMD 🔥';
+const NL_JID   = process.env.NEWSLETTER_JID || '120363421104812135@newsletter';
 
 const ctxInfo = () => ({
   forwardingScore: 999, isForwarded: true,

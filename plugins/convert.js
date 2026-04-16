@@ -9,8 +9,8 @@
 const { fetchJson } = require('../lib/functions2');
 const fakevCard     = require('../lib/fakevcard');
 
-const BOT_NAME       = process.env.BOT_NAME       || '🔥 REDXBOT302 🔥';
-const NEWSLETTER_JID = process.env.NEWSLETTER_JID || '120363405513439052@newsletter';
+const BOT_NAME       = process.env.BOT_NAME       || '🔥 TEDDY-XMD 🔥';
+const NEWSLETTER_JID = process.env.NEWSLETTER_JID || '120363421104812135@newsletter';
 
 const ctxInfo = () => ({
   forwardingScore: 999,

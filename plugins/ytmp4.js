@@ -6,8 +6,8 @@ const CH = {
   contextInfo: {
     forwardingScore: 1, isForwarded: true,
     forwardedNewsletterMessageInfo: {
-      newsletterJid: '120363405513439052@newsletter',
-      newsletterName: 'REDXBOT302',
+      newsletterJid: '120363421104812135@newsletter',
+      newsletterName: 'TEDDY-XMD',
       serverMessageId: -1,
     },
   },
@@ -43,7 +43,7 @@ module.exports = {
         `1 🎬 Normal Video (Gallery)\n` +
         `2 📁 Document File (File)\n` +
         `3 📹 Video Note (PTV)\n\n` +
-        `> *Powered by REDXBOT302*`;
+        `> *Powered by Teddy Tech Hub*`;
 
       const sentMsg = await sock.sendMessage(chatId, {
         image: { url: info.thumbnail },

@@ -9,17 +9,17 @@
 const fakevCard      = require('../lib/fakevcard');
 const { runtime }    = require('../lib/functions');
 
-const BOT_NAME       = process.env.BOT_NAME       || '🔥 REDXBOT302 🔥';
-const OWNER_NAME     = process.env.OWNER_NAME     || 'Abdul Rehman Rajpoot';
-const CO_OWNER       = process.env.CO_OWNER       || 'Muzamil Khan';
-const OWNER_NUM      = process.env.OWNER_NUMBER   || '923009842133';
-const CO_OWNER_NUM   = process.env.CO_OWNER_NUM   || '923183928892';
-const REPO_LINK      = process.env.REPO_LINK      || 'https://github.com/AbdulRehman19721986/REDXBOT-MD';
-const MENU_IMAGE     = process.env.MENU_IMAGE     || 'https://files.catbox.moe/s36b12.jpg';
-const NEWSLETTER_JID = process.env.NEWSLETTER_JID || '120363405513439052@newsletter';
-const WA_GROUP       = process.env.WA_GROUP       || 'https://chat.whatsapp.com/LhSmx2SeXX75r8I2bxsNDo';
-const TG_GROUP       = process.env.TG_GROUP       || 'https://t.me/TeamRedxhacker2';
-const YOUTUBE        = process.env.YOUTUBE        || 'https://youtube.com/@rootmindtech';
+const BOT_NAME       = process.env.BOT_NAME       || '🔥 TEDDY-XMD 🔥';
+const OWNER_NAME     = process.env.OWNER_NAME     || 'Teddy';
+const CO_OWNER       = process.env.CO_OWNER       || 'Teddy';
+const OWNER_NUM      = process.env.OWNER_NUMBER   || '254799963583';
+const CO_OWNER_NUM   = process.env.CO_OWNER_NUM   || '254799963583';
+const REPO_LINK      = process.env.REPO_LINK      || 'https://github.com/Teddytech1/TEDDY-XMD';
+const MENU_IMAGE     = process.env.MENU_IMAGE     || 'https://files.catbox.moe/13nyhx.jpg';
+const NEWSLETTER_JID = process.env.NEWSLETTER_JID || '120363421104812135@newsletter';
+const WA_GROUP       = process.env.WA_GROUP       || 'https://chat.whatsapp.com/CLClgqJIC59GrcI4sRzLu8?mode=gi_c';
+const TG_GROUP       = process.env.TG_GROUP       || 'https://t.me/Free_net_zone2';
+const YOUTUBE        = process.env.YOUTUBE        || 'https://youtube.com/@teddytechhub';
 const START_TIME     = Date.now();
 
 const ctxInfo = () => ({
@@ -55,7 +55,7 @@ module.exports = [
         image: { url: MENU_IMAGE },
         caption:
 `╔══════════════════════════════╗
-║    🔥 *REDXBOT302 INFO* 🔥    ║
+║    🔥 *TEDDY-XMD INFO* 🔥    ║
 ╚══════════════════════════════╝
 
 🤖 *Bot Name:* ${BOT_NAME}
@@ -192,7 +192,7 @@ ${target === CO_OWNER_NUM + '@s.whatsapp.net' ? '👤 *Special:* Co-Owner' : ''}
 👑 Owner: *${OWNER_NAME}*
 🌍 Mode: *${(global.BOT_MODE || 'public').toUpperCase()}*
 
-> 🔥 REDXBOT302 — Always Online!`,
+> 🔥 TEDDY-XMD — Always Online!`,
         contextInfo: ctxInfo(),
       }, { quoted: fakevCard });
     },

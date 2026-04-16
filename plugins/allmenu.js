@@ -25,7 +25,7 @@ module.exports = {
             }
         }
 
-        let menu = `╭┈┄───【 ${config.botName || 'REDXBOT302'} 】───┄┈╮\n`;
+        let menu = `╭┈┄───【 ${config.botName || '𝐓𝐄𝐃𝐃-𝐗𝐌𝐃'} 】───┄┈╮\n`;
         menu += `├■ 🤖 Owner: ${config.ownerName}\n`;
         menu += `├■ 📜 Commands: ${cmds.size + builtins.length}\n`;
         menu += `├■ ⏱️ Runtime: ${formatUptime(process.uptime())}\n`;

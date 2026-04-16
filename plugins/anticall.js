@@ -9,8 +9,8 @@ const path = require('path');
 const { downloadContentFromMessage } = require('@whiskeysockets/baileys');
 const store = require('../lib/lightweight_store');
 
-const BOT_NAME = process.env.BOT_NAME || '🔥 REDXBOT302 🔥';
-const NL_JID   = process.env.NEWSLETTER_JID || '120363405513439052@newsletter';
+const BOT_NAME = process.env.BOT_NAME || '🔥 TEDDY-XMD 🔥';
+const NL_JID   = process.env.NEWSLETTER_JID || '120363421104812135@newsletter';
 const MEDIA_DIR = path.join(process.cwd(), 'data', 'anticall_media');
 if (!fs.existsSync(MEDIA_DIR)) fs.mkdirSync(MEDIA_DIR, { recursive: true });
 

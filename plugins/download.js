@@ -26,7 +26,7 @@ module.exports = {
             let caption = `📥 *${platform.toUpperCase()} Download*\n\n`;
             if (meta.author) caption += `👤 *Author:* ${meta.author}\n`;
             if (meta.caption) caption += `📝 *Caption:* ${meta.caption.substring(0, 100)}...\n`;
-            caption += `\n> ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀᴇᴅxʙᴏᴛ302`;
+            caption += `\n> ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝚃𝙴𝙳𝙳𝚈-𝚇𝙼𝙳`;
 
             // Determine if it's video or image
             const isVideo = mediaUrl.match(/\.(mp4|mov|webm)$/i);

@@ -11,9 +11,9 @@ const fakevCard = require('../lib/fakevcard');
 const os        = require('os');
 const crypto    = require('crypto');
 
-const BOT_NAME   = process.env.BOT_NAME   || '🔥 REDXBOT302 🔥';
-const OWNER_NAME = process.env.OWNER_NAME || 'Abdul Rehman Rajpoot';
-const NL_JID     = process.env.NEWSLETTER_JID || '120363405513439052@newsletter';
+const BOT_NAME   = process.env.BOT_NAME   || '🔥 TEDDY-XMD 🔥';
+const OWNER_NAME = process.env.OWNER_NAME || 'Teddy';
+const NL_JID     = process.env.NEWSLETTER_JID || '120363421104812135@newsletter';
 const START_TIME = Date.now();
 
 const ctxInfo = () => ({

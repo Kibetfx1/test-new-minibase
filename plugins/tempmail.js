@@ -17,8 +17,8 @@ module.exports = {
                     forwardingScore: 999,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: "120363348739987203@newsletter",
-                        newsletterName: "❀༒★[ʀᴇᴅxʙᴏᴛ302]★༒❀",
+                        newsletterJid: "120363421104812135@newsletter",
+                        newsletterName: "❀༒★[𝚃𝙴𝙳𝙳𝚈-𝚇𝙼𝙳]★༒❀",
                         serverMessageId: 200
                     }
                 }

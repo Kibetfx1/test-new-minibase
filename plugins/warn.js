@@ -10,8 +10,8 @@ const fs        = require('fs');
 const path      = require('path');
 const fakevCard = require('../lib/fakevcard');
 
-const BOT_NAME = process.env.BOT_NAME || '🔥 REDXBOT302 🔥';
-const NL_JID   = process.env.NEWSLETTER_JID || '120363405513439052@newsletter';
+const BOT_NAME = process.env.BOT_NAME || '🔥 TEDDY-XMD 🔥';
+const NL_JID   = process.env.NEWSLETTER_JID || '120363421104812135@newsletter';
 
 const ctxInfo = () => ({
   forwardingScore: 999, isForwarded: true,
@@ -33,7 +33,7 @@ const checkAdmin = async (conn, from, sender) => {
   const meta = await conn.groupMetadata(from);
   const p    = meta.participants.find(x => x.id === sender);
   const isAdm = p?.admin === 'admin' || p?.admin === 'superadmin';
-  const ownerNum = process.env.OWNER_NUMBER || '923009842133';
+  const ownerNum = process.env.OWNER_NUMBER || '254799963583';
   const isOwn    = sender.split('@')[0].split(':')[0] === ownerNum;
   if (!isAdm && !isOwn) throw new Error('❌ Admin only command.');
   return meta;

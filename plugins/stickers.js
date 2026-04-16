@@ -44,8 +44,8 @@ module.exports = {
 
       // Create sticker with stickers-formatter
       const sticker = new Sticker(buffer, {
-        pack: 'REDX Stickers',
-        author: 'Abdul Rehman & Muzamil',
+        pack: 'TEDDY-XMD Stickers',
+        author: 'Teddy',
         type: stickerType,
         quality: 80,
         categories: ['🤖', '✨']

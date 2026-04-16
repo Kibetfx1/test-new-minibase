@@ -10,9 +10,9 @@ const fs    = require('fs');
 const path  = require('path');
 const { downloadContentFromMessage } = require('@whiskeysockets/baileys');
 
-const BOT_NAME = process.env.BOT_NAME || '🔥 REDXBOT302 🔥';
-const NL_JID   = process.env.NEWSLETTER_JID || '120363405513439052@newsletter';
-const OWNER_NUM = process.env.OWNER_NUMBER || '923009842133';
+const BOT_NAME = process.env.BOT_NAME || '🔥 TEDDY-XMD 🔥';
+const NL_JID   = process.env.NEWSLETTER_JID || '120363421104812135@newsletter';
+const OWNER_NUM = process.env.OWNER_NUMBER || '254799963583';
 
 const ctxInfo = () => ({
   forwardingScore: 999, isForwarded: true,
@@ -327,19 +327,19 @@ module.exports = [
       if (!isOwner) return reply('❌ Owner only!');
       await conn.sendMessage(from, { react: { text: '🔄', key: msg.key } });
       try {
-        const res = await fetchJson('https://api.github.com/repos/AbdulRehman19721986/REDXBOT-MD/commits/main');
+        const res = await fetchJson('https://api.github.com/repos/Teddytech1/TEDDY-XMD/commits/main');
         const sha     = res?.sha?.substring(0, 7) || '?';
         const message = res?.commit?.message || 'No message';
         const date    = res?.commit?.author?.date ? new Date(res.commit.author.date).toLocaleString() : '?';
         const author  = res?.commit?.author?.name || '?';
 
         reply(
-          `🔄 *REDXBOT302 Update Check*\n\n` +
+          `🔄 *TEDDY-XMD Update Check*\n\n` +
           `📦 *Latest Commit:* ${sha}\n` +
           `✍️ *Message:* ${message}\n` +
           `👤 *Author:* ${author}\n` +
           `📅 *Date:* ${date}\n\n` +
-          `🔗 *GitHub:* https://github.com/AbdulRehman19721986/REDXBOT-MD\n\n` +
+          `🔗 *GitHub:* https://github.com/Teddytech1/TEDDY-XMD\n\n` +
           `To update:\n` +
           `\`git pull origin main\`\n` +
           `\`npm install\`\n` +

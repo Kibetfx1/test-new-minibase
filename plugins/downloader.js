@@ -7,8 +7,8 @@
 
 const axios = require('axios');
 
-const BOT_NAME       = process.env.BOT_NAME       || '🔥 REDXBOT302 🔥';
-const NEWSLETTER_JID = process.env.NEWSLETTER_JID || '120363405513439052@newsletter';
+const BOT_NAME       = process.env.BOT_NAME       || '🔥 TEDDY-XMD 🔥';
+const NEWSLETTER_JID = process.env.NEWSLETTER_JID || '120363421104812135@newsletter';
 
 const ctxInfo = () => ({
   forwardingScore: 999, isForwarded: true,
@@ -29,7 +29,7 @@ function isUrl(str) { try { new URL(str); return true; } catch { return false; }
 async function sendSelectionMenu(conn, msg, from, dlKey, downloadSessions, title, items, sendFn) {
   let text = `╔══════════════════════════╗\n║  📥 *${title}*\n╚══════════════════════════╝\n\n`;
   items.forEach((item, i) => { text += `*${i + 1}.* ${item.label}\n`; });
-  text += `\n💡 *Reply with a number to download*\n> 🔥 REDXBOT302`;
+  text += `\n💡 *Reply with a number to download*\n> 🔥 TEDDY-XMD`;
   await conn.sendMessage(from, { text, contextInfo: ctxInfo() }, { quoted: msg });
   downloadSessions.set(dlKey, {
     items, sendFn,

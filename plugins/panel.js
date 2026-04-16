@@ -11,8 +11,8 @@ const path = require('path');
 const axios = require('axios');
 const store = require('../lib/lightweight_store');
 
-const BOT_NAME    = process.env.BOT_NAME     || '🔥 REDXBOT302 🔥';
-const NL_JID      = process.env.NEWSLETTER_JID || '120363405513439052@newsletter';
+const BOT_NAME    = process.env.BOT_NAME     || '🔥 TEDDY-XMD 🔥';
+const NL_JID      = process.env.NEWSLETTER_JID || '120363421104812135@newsletter';
 const PLUGINS_DIR = path.join(process.cwd(), 'plugins');
 const CREDS_FILE  = path.join(process.cwd(), 'data', 'panel_creds.json');
 
@@ -33,7 +33,7 @@ module.exports = [
       const sub = (args[0]||'').toLowerCase();
 
       if (!sub || sub==='menu' || sub==='help') return reply(
-        `╔══════════════════════════════╗\n║    🔧 *REDXBOT302 PANEL*      ║\n╚══════════════════════════════╝\n\n`+
+        `╔══════════════════════════════╗\n║    🔧 *TEDDY-XMD PANEL*      ║\n╚══════════════════════════════╝\n\n`+
         `🧩 *Plugin Manager:*\n`+
         `• .panel plugins — list all plugins\n`+
         `• .panel install <raw-js-url>\n`+
@@ -132,7 +132,7 @@ module.exports = [
         const files   = fs.existsSync(PLUGINS_DIR)?fs.readdirSync(PLUGINS_DIR).filter(f=>f.endsWith('.js')).length:0;
         const mode    = await store.getSetting('global','mode')||process.env.MODE||'public';
         const prefix  = await store.getSetting('global','prefix')||process.env.PREFIX||'.';
-        const botName = await store.getSetting('global','botname_temp')||process.env.BOT_NAME||'REDXBOT302';
+        const botName = await store.getSetting('global','botname_temp')||process.env.BOT_NAME||'TEDDY-XMD';
         const up      = process.uptime();
         return reply(
           `╔══════════════════════════╗\n║  📊 *BOT STATUS*           ║\n╚══════════════════════════╝\n\n`+

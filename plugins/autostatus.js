@@ -26,8 +26,8 @@ const channelInfo = {
         forwardingScore: 1,
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
-            newsletterJid: '120363405513439052@newsletter',
-            newsletterName: 'REDXBOT302',
+            newsletterJid: '120363421104812135@newsletter',
+            newsletterName: 'TEDDY-XMD',
             serverMessageId: -1
         }
     }

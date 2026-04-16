@@ -27,7 +27,7 @@ module.exports = {
         }
 
         const sortedCats = [...categories.keys()].sort();
-        let menu = `╭┈───〔 ${config.botName || 'REDXBOT302'} 〕───⊷\n`;
+        let menu = `╭┈───〔 ${config.botName || '𝐓𝐄𝐃𝐃-𝐗𝐌𝐃'} 〕───⊷\n`;
         menu += `├▢ 🤖 Owner: ${config.ownerName}\n`;
         menu += `├▢ 🪄 Prefix: ${prefix}\n`;
         menu += `├▢ 🎐 Version: 6.0.0\n`;

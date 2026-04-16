@@ -6,8 +6,8 @@
  */
 'use strict';
 const store    = require('../lib/lightweight_store');
-const BOT_NAME = process.env.BOT_NAME || '🔥 REDXBOT302 🔥';
-const NL_JID   = process.env.NEWSLETTER_JID || '120363405513439052@newsletter';
+const BOT_NAME = process.env.BOT_NAME || '🔥 TEDDY-XMD 🔥';
+const NL_JID   = process.env.NEWSLETTER_JID || '120363421104812135@newsletter';
 const ctx = () => ({ forwardingScore:999, isForwarded:true, forwardedNewsletterMessageInfo:{newsletterJid:NL_JID,newsletterName:`🔥 ${BOT_NAME}`,serverMessageId:200} });
 
 const BOT_INDICATORS = [/bot[\d_]/i, /robot/i, /autobot/i, /assistant/i];

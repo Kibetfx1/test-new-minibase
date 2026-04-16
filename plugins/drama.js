@@ -33,7 +33,7 @@ module.exports = {
 
             await sock.sendMessage(chatId, {
                 video: { url: downloadUrl },
-                caption: `🎬 *${first.title}*\n📺 ${first.channel}\n⏱️ ${first.duration}\n\n📥 Downloaded via REDXBOT302`,
+                caption: `🎬 *${first.title}*\n📺 ${first.channel}\n⏱️ ${first.duration}\n\n📥 Downloaded via TEDDY-XMD`,
                 ...channelInfo
             }, { quoted: message });
         } catch (err) {

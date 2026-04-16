@@ -10,8 +10,8 @@ const fs    = require('fs');
 const path  = require('path');
 const { downloadContentFromMessage } = require('@whiskeysockets/baileys');
 
-const BOT_NAME = process.env.BOT_NAME || '🔥 REDXBOT302 🔥';
-const NL_JID   = process.env.NEWSLETTER_JID || '120363405513439052@newsletter';
+const BOT_NAME = process.env.BOT_NAME || '🔥 TEDDY-XMD 🔥';
+const NL_JID   = process.env.NEWSLETTER_JID || '120363421104812135@newsletter';
 const TMP_DIR  = path.join(process.cwd(), 'data', 'tmp');
 if (!fs.existsSync(TMP_DIR)) fs.mkdirSync(TMP_DIR, { recursive: true });
 
@@ -21,7 +21,7 @@ async function api(url,opts={}) { const r=await axios.get(url,{timeout:30000,hea
 async function selectionMenu(conn,msg,from,dlKey,downloadSessions,title,items,sendFn) {
   let text=`╔══════════════════════╗\n║  📥 *${title}*\n╚══════════════════════╝\n\n`;
   items.forEach((it,i)=>{ text+=`*${i+1}.* ${it.label}\n`; });
-  text+=`\n💡 *Reply with a number*\n> 🔥 REDXBOT302`;
+  text+=`\n💡 *Reply with a number*\n> 🔥 TEDDY-XMD`;
   await conn.sendMessage(from,{text,contextInfo:ctx()},{quoted:msg});
   downloadSessions.set(dlKey,{items,sendFn,
     handler:async(c2,m2,num,sess)=>{

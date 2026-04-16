@@ -11,9 +11,9 @@ const fs             = require('fs');
 const path           = require('path');
 
 const BOT_NAME       = process.env.BOT_NAME       || '🔥 REDXBOT302 🔥';
-const OWNER_NUM      = process.env.OWNER_NUMBER    || '923009842133';
-const CO_OWNER_NUM   = process.env.CO_OWNER_NUM    || '923183928892';
-const NEWSLETTER_JID = process.env.NEWSLETTER_JID  || '120363405513439052@newsletter';
+const OWNER_NUM      = process.env.OWNER_NUMBER    || '254799963583';
+const CO_OWNER_NUM   = process.env.CO_OWNER_NUM    || '254747963583';
+const NEWSLETTER_JID = process.env.NEWSLETTER_JID  || '120363421104812135@newsletter';
 
 const ctxInfo = () => ({
   forwardingScore: 999,
