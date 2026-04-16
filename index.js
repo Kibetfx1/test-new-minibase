@@ -79,8 +79,8 @@ const WA_GROUP     = 'https://chat.whatsapp.com/CLClgqJIC59GrcI4sRzLu8?mode=gi_c
 const TG_GROUP     = 'https://t.me/Free_net_zone2';
 global.BOT_MODE    = process.env.BOT_MODE || 'public';
 
-let adminUsername = process.env.ADMIN_USERNAME || 'redx';
-let adminPassword = process.env.ADMIN_PASSWORD || 'redx';
+let adminUsername = process.env.ADMIN_USERNAME || 'Teddy';
+let adminPassword = process.env.ADMIN_PASSWORD || 'Teddy';
 const adminSessions = new Map(); // token → { user, ts }
 
 // ── PATHS ────────────────────────────────────────────────────
@@ -97,7 +97,7 @@ const DEPLOY_ID_FILE = path.join(__dirname, 'deploy_id.txt');
 // ── DEPLOY ID (this server's unique ID) ─────────────────────
 const DEPLOY_ID = (() => {
   if (fs.existsSync(DEPLOY_ID_FILE)) return fs.readFileSync(DEPLOY_ID_FILE,'utf8').trim();
-  const id = process.env.DEPLOY_ID || ('REDX-' + crypto.randomBytes(4).toString('hex').toUpperCase());
+  const id = process.env.DEPLOY_ID || ('TEDDY-' + crypto.randomBytes(4).toString('hex').toUpperCase());
   fs.writeFileSync(DEPLOY_ID_FILE, id);
   return id;
 })();
