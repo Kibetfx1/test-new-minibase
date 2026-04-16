@@ -1,6 +1,6 @@
 # ╔══════════════════════════════════════╗
-# ║   🔥 REDXBOT302 MINI — Dockerfile   ║
-# ║   Owner: Abdul Rehman Rajpoot        ║
+# ║   🔥 TEDDY-XMD MINI — Dockerfile   ║
+# ║   Owner:                Teddy.        ║
 # ╚══════════════════════════════════════╝
 
 FROM node:20-slim

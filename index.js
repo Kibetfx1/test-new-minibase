@@ -1,8 +1,8 @@
 'use strict';
 /**
- * 🔥 REDXBOT302 — FINAL EDITION v5.2 (Fixed for Railway)
+ * 🔥 TEDDY-XMD — FINAL EDITION v5.2 (Fixed for Railway)
  * Full plugin system · Built‑in menus removed · Antidelete integrated · YTDownloader
- * Owner: Abdul Rehman Rajpoot (+923009842133)
+ * Owner: Teddy (+254799963583)
  */
 
 const express  = require('express');
@@ -65,18 +65,18 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
 // ── CONFIG ──────────────────────────────────────────────────
-const BOT_NAME     = process.env.BOT_NAME     || '🔥 REDXBOT302 🔥';
-const OWNER_NAME   = process.env.OWNER_NAME   || 'Abdul Rehman Rajpoot';
-const OWNER_NUM    = process.env.OWNER_NUMBER || '923009842133';
-const CO_OWNER     = process.env.CO_OWNER     || 'Muzamil Khan';
-const CO_OWNER_NUM = process.env.CO_OWNER_NUM || '923183928892';
+const BOT_NAME     = process.env.BOT_NAME     || '🔥 TEDDY-XMD 🔥';
+const OWNER_NAME   = process.env.OWNER_NAME   || 'Teddt';
+const OWNER_NUM    = process.env.OWNER_NUMBER || '254799963583';
+const CO_OWNER     = process.env.CO_OWNER     || 'Teddy';
+const CO_OWNER_NUM = process.env.CO_OWNER_NUM || '254799963583';
 const PREFIX       = process.env.PREFIX       || '.';
-const BOT_IMG      = process.env.MENU_IMAGE   || 'https://files.catbox.moe/s36b12.jpg';
-const REPO_LINK    = process.env.REPO_LINK    || 'https://github.com/AbdulRehman19721986/REDXBOT-MD';
-const NL_JID       = process.env.NEWSLETTER_JID || '120363405513439052@newsletter';
-const NL_NAME      = '🔥 REDXBOT302 🔥';
-const WA_GROUP     = 'https://chat.whatsapp.com/LhSmx2SeXX75r8I2bxsNDo';
-const TG_GROUP     = 'https://t.me/TeamRedxhacker2';
+const BOT_IMG      = process.env.MENU_IMAGE   || 'https://files.catbox.moe/13nyhx.jpg';
+const REPO_LINK    = process.env.REPO_LINK    || 'https://github.com/Teddytech1/TEDDY-XMD';
+const NL_JID       = process.env.NEWSLETTER_JID || '120363421104812135@newsletter';
+const NL_NAME      = '🔥 TEDDY-XMD 🔥';
+const WA_GROUP     = 'https://chat.whatsapp.com/CLClgqJIC59GrcI4sRzLu8?mode=gi_c';
+const TG_GROUP     = 'https://t.me/Free_net_zone2';
 global.BOT_MODE    = process.env.BOT_MODE || 'public';
 
 let adminUsername = process.env.ADMIN_USERNAME || 'redx';
@@ -379,7 +379,7 @@ async function sendWelcome(conn, number) {
 👋 Hey *${name}* 🤩
 🎉 *Pairing Completed — You're good to go!*
 
-_ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀᴇᴅxʙᴏᴛ302_
+_ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝚃𝙴𝙳𝙳𝚈-𝚇𝙼𝙳_
 
 📱 *Number:* +${number}
 🆔 *Deploy ID:* \`${DEPLOY_ID}\`
@@ -818,7 +818,7 @@ app.get('/health', (req, res) => res.json({
 // ======================== START ========================
 server.listen(PORT, async () => {
   console.log(`\n╔════════════════════════════════════════════════════╗`);
-  console.log(`║  🔥 REDXBOT302 FINAL EDITION v5.2                  ║`);
+  console.log(`║  🔥 TEDDY-XMD FINAL EDITION v5.2                  ║`);
   console.log(`║  🌐 http://localhost:${String(PORT).padEnd(26)}║`);
   console.log(`║  🆔 Deploy ID: ${String(DEPLOY_ID).padEnd(34)}║`);
   console.log(`║  🔑 Deploy Key: ${String(deploys[DEPLOY_ID]?.deployKey||'—').slice(0,20).padEnd(33)}║`);

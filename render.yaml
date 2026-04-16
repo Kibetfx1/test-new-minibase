@@ -8,15 +8,15 @@ services:
       - key: NODE_ENV
         value: production
       - key: BOT_NAME
-        value: "🔥 REDXBOT302 🔥"
+        value: "🔥 TEDDY-XMD 🔥"
       - key: OWNER_NUMBER
-        value: "923009842133"
+        value: "254799963583"
       - key: OWNER_NAME
-        value: "Abdul Rehman Rajpoot"
+        value: "Teddt"
       - key: CO_OWNER
-        value: "Muzamil Khan"
+        value: "Teddg"
       - key: CO_OWNER_NUM
-        value: "923183928892"
+        value: "254799963583"
       - key: PREFIX
         value: "."
       - key: BOT_MODE
