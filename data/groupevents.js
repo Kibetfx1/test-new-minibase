@@ -1,6 +1,6 @@
 /**
- * REDXBOT302 — Group Events (Welcome / Goodbye)
- * Owner: Abdul Rehman Rajpoot
+ * TEDDY-XMD — Group Events (Welcome / Goodbye)
+ * Owner: Teddy
  */
 
 'use strict';
@@ -8,10 +8,10 @@
 module.exports = async function GroupEvents(conn, update, config = {}) {
   try {
     const {
-      botName     = '🔥 REDXBOT302 🔥',
-      ownerName   = 'Abdul Rehman Rajpoot',
-      menuImage   = 'https://files.catbox.moe/s36b12.jpg',
-      newsletterJid = '120363405513439052@newsletter',
+      botName     = '🔥 TEDDY-XMD 🔥',
+      ownerName   = 'Teddy',
+      menuImage   = 'https://files.catbox.moe/13nyhx.jpg',
+      newsletterJid = '120363421104812135@newsletter',
     } = config;
 
     const { id, participants, action } = update;
