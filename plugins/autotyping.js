@@ -142,7 +142,7 @@ module.exports = {
     category: 'owner',
     description: 'Toggle auto-typing indicator when bot is processing messages',
     usage: '.autotyping <on|off>',
-    ownerOnly: true,
+    ownerOnly: false,
 
     async handler(sock, message, args, context = {}) {
         const chatId = context.chatId || message.key.remoteJid;
