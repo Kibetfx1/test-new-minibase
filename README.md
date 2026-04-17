@@ -1,14 +1,14 @@
 # 🔥 TEDDY-XMD — Combined Final Edition
 
 > WhatsApp Multi-Device Bot | Pair-Only | No SESSION_ID | 200+ Commands
-> **Owner:** Abdul Rehman Rajpoot | **Co-Owner:** Muzamil Khan
+> **Owner:** Teddy | **Co-Owner:** Muzamil Khan
 
 ---
 
 ## 📁 Project Structure
 
 ```
-REDXBOT302/
+TEDDY-XMD/
 ├── index.js          ← Main bot server (Arslan MD architecture)
 ├── settings.js       ← Bot config (reads from process.env)
 ├── package.json      ← All dependencies
