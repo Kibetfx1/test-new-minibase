@@ -30,7 +30,7 @@ const plugins = [
 {
   command: 'ban', aliases: ['banuser'], category: cat,
   description: 'Ban a user from using the bot', usage: '.ban @user',
-  ownerOnly: true,
+  ownerOnly: false,
   async handler(sock, message, args, context) {
     const chatId = context.chatId || message.key.remoteJid;
     const sender = (message.key.participant || message.key.remoteJid).replace('@s.whatsapp.net','');
@@ -66,7 +66,7 @@ const plugins = [
 {
   command: 'listban', aliases: ['banned'], category: cat,
   description: 'List all banned users', usage: '.listban',
-  ownerOnly: true,
+  ownerOnly: false,
   async handler(sock, message, args, context) {
     const chatId = context.chatId || message.key.remoteJid;
     const banned = readBanned();
@@ -92,7 +92,7 @@ const plugins = [
 {
   command: 'mode', aliases: ['botmode'], category: cat,
   description: 'Change bot mode (PUBLIC/PRIVATE)', usage: '.mode <public|private>',
-  ownerOnly: true,
+  ownerOnly: false,
   async handler(sock, message, args, context) {
     const chatId = context.chatId || message.key.remoteJid;
     const m = (args[0] || '').toUpperCase();
@@ -105,7 +105,7 @@ const plugins = [
 {
   command: 'prefix', aliases: ['setprefix'], category: cat,
   description: 'Change bot command prefix', usage: '.prefix <new prefix>',
-  ownerOnly: true,
+  ownerOnly: false,
   async handler(sock, message, args, context) {
     const chatId = context.chatId || message.key.remoteJid;
     const p = args[0];
