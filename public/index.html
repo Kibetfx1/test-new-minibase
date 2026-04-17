@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+DmiOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -361,7 +361,7 @@ async function loadAdminData() {
     document.getElementById('statUsers').innerText = stats.stats?.totalUsers||0;
     const up = stats.stats?.uptime||0; let uptxt = up<60?up+'s': up<3600?Math.floor(up/60)+'m': Math.floor(up/3600)+'h';
     document.getElementById('statUptime').innerText = uptxt;
-    document.getElementById('botInfo').innerHTML = `<div>Bot: ${stats.botName||'REDXBOT'}</div><div>Mode: ${stats.mode||'public'}</div><div>Deploy ID: ${stats.deployId||'—'}</div>`;
+    document.getElementById('botInfo').innerHTML = `<div>Bot: ${stats.botName||'TEDDY-XMD BOT'}</div><div>Mode: ${stats.mode||'public'}</div><div>Deploy ID: ${stats.deployId||'—'}</div>`;
     // deploys table
     const deploysRes = await fetch('/api/admin/deploys',{headers:{'x-admin-token':adminToken}});
     const deploys = await deploysRes.json();
