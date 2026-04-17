@@ -66,7 +66,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // ── CONFIG ──────────────────────────────────────────────────
 const BOT_NAME     = process.env.BOT_NAME     || '🔥 TEDDY-XMD 🔥';
-const OWNER_NAME   = process.env.OWNER_NAME   || 'Teddt';
+const OWNER_NAME   = process.env.OWNER_NAME   || 'Teddy';
 const OWNER_NUM    = process.env.OWNER_NUMBER || '254799963583';
 const CO_OWNER     = process.env.CO_OWNER     || 'Teddy';
 const CO_OWNER_NUM = process.env.CO_OWNER_NUM || '254799963583';
