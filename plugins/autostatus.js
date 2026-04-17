@@ -38,8 +38,8 @@ async function readConfig() {
         if (HAS_DB) {
             const config = await store.getSetting('global', 'autoStatus');
             return config || {
-                enabled: false,
-                reactOn: false,
+                enabled: true,
+                reactOn: true,
                 reactEmoji: '💚',
                 reactText: ''
             };
@@ -47,8 +47,8 @@ async function readConfig() {
             if (!fs.existsSync(configPath)) {
                 fs.mkdirSync(path.dirname(configPath), { recursive: true });
                 fs.writeFileSync(configPath, JSON.stringify({
-                    enabled: false,
-                    reactOn: false,
+                    enabled: true,
+                    reactOn: true,
                     reactEmoji: '💚',
                     reactText: ''
                 }, null, 2));
@@ -57,8 +57,8 @@ async function readConfig() {
         }
     } catch {
         return {
-            enabled: false,
-            reactOn: false,
+            enabled: true,
+            reactOn: true,
             reactEmoji: '💚',
             reactText: ''
         };
@@ -176,7 +176,7 @@ module.exports = {
         .autostatus text <text>                    – Set custom text (not used yet)
         .autostatus status                         – Show current settings
     `,
-    ownerOnly: true,
+    ownerOnly: false,
 
     async handler(sock, message, args, context = {}) {
         const chatId = context.chatId || message.key.remoteJid;
@@ -186,7 +186,7 @@ module.exports = {
 
             if (args.length === 0) {
                 return await sock.sendMessage(chatId, {
-                    text: `🔄 *Auto Status – REDXBOT302*\n\n` +
+                    text: `🔄 *Auto Status – TEDDY-XMD*\n\n` +
                           `Auto View: ${config.enabled ? '✅' : '❌'}\n` +
                           `Reactions: ${config.reactOn ? '✅' : '❌'}\n` +
                           `Reaction Emoji: ${config.reactEmoji}\n` +
